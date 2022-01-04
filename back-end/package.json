@@ -1,0 +1,41 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js",
+    "test": "npx cross-env LOG_LEVEL=warn jest --runInBand --detectOpenHandles --forceExit",
+    "test:1": "npm run test -- us-01",
+    "test:2": "npm run test -- us-02",
+    "test:3": "npm run test -- us-03",
+    "test:4": "npm run test -- us-04",
+    "test:5": "npm run test -- us-05",
+    "test:6": "npm run test -- us-06",
+    "test:7": "npm run test -- us-07",
+    "test:8": "npm run test -- us-08",
+    "test:drop-database": "node test/drop-database",
+    "test:start": "npx cross-env LOG_LEVEL=warn NODE_ENV=test run-s test:drop-database start" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "knex": "^0.95.15",
+    "nanoid": "^3.1.30",
+    "npm-run-all": "^4.1.5",
+    "pg": "^8.7.1",
+    "pino": "^7.6.2",
+    "pino-http": "^6.5.0",
+    "pino-pretty": "^7.3.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
+  }
+}
