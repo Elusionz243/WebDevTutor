@@ -8,12 +8,15 @@ const knex = require('./db/connection');
 
 const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
+const chapterRouter = require("./chapters/chapter.router");
 
 const app = express();
 
 app.set('db', knex);
 app.use(cors());
 app.use(express.json());
+
+app.use("/chapters", chapterRouter);
 
 app.use(notFound);
 app.use(errorHandler);

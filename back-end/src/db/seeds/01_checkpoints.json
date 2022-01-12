@@ -1,0 +1,18 @@
+[
+	{
+		"checkpoint_title": "checkpoint 1",
+		"checkpoint_description": "checkpoint 1 description",
+		"checkpoint_link": "checkpoint 1 link",
+		"chapter_id": 1
+	},{
+		"checkpoint_title": "checkpoint 2",
+		"checkpoint_description": "checkpoint 2 description",
+		"checkpoint_link": "checkpoint 2 link",
+		"chapter_id": 1
+	},{
+		"checkpoint_title": "checkpoint 3",
+		"checkpoint_description": "checkpoint 3 description",
+		"checkpoint_link": "checkpoint 3 link",
+		"chapter_id": 1
+	}
+]
